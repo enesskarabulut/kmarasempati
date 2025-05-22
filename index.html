@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empati Fizyoterapi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eafaf5',
+                            100: '#d5f5eb',
+                            200: '#abe8d7',
+                            300: '#80dbc2',
+                            400: '#56cdad',
+                            500: '#2cbe98',
+                            600: '#23987a',
+                            700: '#1a725c',
+                            800: '#114c3d',
+                            900: '#09261f',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .animate-gradient {
+            background-size: 200% 200%;
+            animation: gradientAnimation 5s ease infinite;
+        }
+        
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header - Navigation & Banner Combined -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Empati Logo (Left) -->
+                <div class="flex-shrink-0">
+                    <img src="logo.png" alt="Empati Fizyoterapi Logo" class="h-16 sm:h-20 md:h-22">
+                </div>
+                
+                <!-- Header Text (Center) -->
+                <div class="text-center mx-4">
+                    <h2 class="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-primary-600">Özel Kahramanmaraş Empati Fizik Tedavi Merkezi</h2>
+                </div>
+                
+                <!-- MEB Logo (Right) -->
+                <div class="flex-shrink-0">
+                    <img src="meblogo.png" alt="MEB Logo" class="h-16 sm:h-20 md:h-22">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+        <!-- Services Section -->
+        <section class="mb-16">
+            <div class="flex items-center justify-center mb-8">
+                <div class="h-0.5 w-12 bg-primary-500 mr-4"></div>
+                <h2 class="text-3xl font-bold text-gray-800 text-center">Hizmetlerimiz</h2>
+                <div class="h-0.5 w-12 bg-primary-500 ml-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl shadow-md p-6 hover-scale border-t-4 border-primary-500">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Fiziksel Tedavi</h3>
+                    <p class="text-gray-600">Yüksek kalitede fiziksel tedavi programları ile ağrılarınızdan kurtulun.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-6 hover-scale border-t-4 border-primary-500">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Rehabilitasyon</h3>
+                    <p class="text-gray-600">Özel tasarlanmış rehabilitasyon programları ile sağlığınıza kavuşun.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-6 hover-scale border-t-4 border-primary-500">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Sporcu Sağlığı</h3>
+                    <p class="text-gray-600">Spor yaralanmaları için özel tedavi ve rehabilitasyon çözümleri.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-6 hover-scale border-t-4 border-primary-500">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Ortopedik Tedavi</h3>
+                    <p class="text-gray-600">Ortopedik problemler için özel tedavi yaklaşımları.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-6 hover-scale border-t-4 border-primary-500">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Ağrı Tedavisi</h3>
+                    <p class="text-gray-600">Kronik ağrı yönetimi ve tedavisi için özel programlar.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-6 hover-scale border-t-4 border-primary-500">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Nörolojik Rehabilitasyon</h3>
+                    <p class="text-gray-600">Nörolojik hastalıklar için özel rehabilitasyon programları.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Eğitim Programları ve İstatistikler Section -->
+        <section class="mb-16 bg-white rounded-xl shadow-xl p-8 border border-gray-100">
+            <div class="flex items-center justify-center mb-8">
+                <div class="h-0.5 w-12 bg-primary-500 mr-4"></div>
+                <h2 class="text-3xl font-bold text-gray-800 text-center">Eğitim Programları ve İstatistikler</h2>
+                <div class="h-0.5 w-12 bg-primary-500 ml-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Eğitim Programları -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+                        <span class="inline-block w-2 h-8 bg-primary-500 rounded-full mr-2"></span>
+                        Destek Eğitim Programları
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="bg-primary-50 p-4 rounded-lg border-l-4 border-primary-500 transition-all hover:bg-primary-100 hover:shadow-md">
+                            <h4 class="font-semibold text-primary-700">Zihinsel Yetersizlik Destek Eğitim Programı</h4>
+                            <p class="text-gray-600 mt-1">Zihinsel gelişim için özel olarak tasarlanmış eğitim programı</p>
+                        </li>
+                        <li class="bg-primary-50 p-4 rounded-lg border-l-4 border-primary-500 transition-all hover:bg-primary-100 hover:shadow-md">
+                            <h4 class="font-semibold text-primary-700">Bedensel Yetersizlik Destek Eğitim Programı</h4>
+                            <p class="text-gray-600 mt-1">Fiziksel gelişim ve hareket kabiliyeti için özel programlar</p>
+                        </li>
+                        <li class="bg-primary-50 p-4 rounded-lg border-l-4 border-primary-500 transition-all hover:bg-primary-100 hover:shadow-md">
+                            <h4 class="font-semibold text-primary-700">Otizm Spektrum Bozukluğu Destek Eğitim Programı</h4>
+                            <p class="text-gray-600 mt-1">Otizmli bireyler için özel gelişim ve iletişim programları</p>
+                        </li>
+                        <li class="bg-primary-50 p-4 rounded-lg border-l-4 border-primary-500 transition-all hover:bg-primary-100 hover:shadow-md">
+                            <h4 class="font-semibold text-primary-700">Dil ve Konuşma Yetersizliği Destek Eğitim Programı</h4>
+                            <p class="text-gray-600 mt-1">Konuşma ve dil becerilerini geliştirmek için özel eğitim</p>
+                        </li>
+                        <li class="bg-primary-50 p-4 rounded-lg border-l-4 border-primary-500 transition-all hover:bg-primary-100 hover:shadow-md">
+                            <h4 class="font-semibold text-primary-700">Öğrenme Güçlüğü Destek Eğitim Programı</h4>
+                            <p class="text-gray-600 mt-1">Öğrenme güçlüğü yaşayan bireyler için özel eğitim programları</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- İstatistikler -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+                        <span class="inline-block w-2 h-8 bg-primary-500 rounded-full mr-2"></span>
+                        İstatistikler
+                    </h3>
+                    <div class="space-y-6">
+                        <!-- Cinsiyet Dağılımı -->
+                        <div class="bg-white rounded-lg border border-gray-200 p-5 shadow-sm hover:shadow-md transition-all">
+                            <h4 class="font-semibold text-gray-800 mb-4">Cinsiyet Dağılımı</h4>
+                            <div class="flex items-center mb-3">
+                                <span class="text-blue-700 font-medium w-24">Erkek Öğrenci:</span>
+                                <div class="flex-1 bg-gray-200 rounded-full h-5">
+                                    <div class="bg-gradient-to-r from-blue-500 to-blue-700 h-5 rounded-full transition-all duration-1000" style="width: 64%"></div>
+                                </div>
+                                <span class="ml-3 text-gray-700 font-medium">64%</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-pink-700 font-medium w-24">Kız Öğrenci:</span>
+                                <div class="flex-1 bg-gray-200 rounded-full h-5">
+                                    <div class="bg-gradient-to-r from-pink-400 to-pink-600 h-5 rounded-full transition-all duration-1000" style="width: 36%"></div>
+                                </div>
+                                <span class="ml-3 text-gray-700 font-medium">36%</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Program Katılım Oranları -->
+                        <div class="bg-white rounded-lg border border-gray-200 p-5 shadow-sm hover:shadow-md transition-all">
+                            <h4 class="font-semibold text-gray-800 mb-4">Program Katılım Oranları</h4>
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-gray-600 font-medium">Zihinsel Yetersizlik</span>
+                                    <div class="flex items-center">
+                                        <div class="w-36 h-2 bg-gray-200 rounded-full mr-2">
+                                            <div class="bg-primary-500 h-2 rounded-full" style="width: 28%"></div>
+                                        </div>
+                                        <span class="font-medium">28%</span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-gray-600 font-medium">Bedensel Yetersizlik</span>
+                                    <div class="flex items-center">
+                                        <div class="w-36 h-2 bg-gray-200 rounded-full mr-2">
+                                            <div class="bg-primary-500 h-2 rounded-full" style="width: 22%"></div>
+                                        </div>
+                                        <span class="font-medium">22%</span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-gray-600 font-medium">Otizm Spektrum</span>
+                                    <div class="flex items-center">
+                                        <div class="w-36 h-2 bg-gray-200 rounded-full mr-2">
+                                            <div class="bg-primary-500 h-2 rounded-full" style="width: 25%"></div>
+                                        </div>
+                                        <span class="font-medium">25%</span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-gray-600 font-medium">Dil ve Konuşma</span>
+                                    <div class="flex items-center">
+                                        <div class="w-36 h-2 bg-gray-200 rounded-full mr-2">
+                                            <div class="bg-primary-500 h-2 rounded-full" style="width: 15%"></div>
+                                        </div>
+                                        <span class="font-medium">15%</span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-gray-600 font-medium">Öğrenme Güçlüğü</span>
+                                    <div class="flex items-center">
+                                        <div class="w-36 h-2 bg-gray-200 rounded-full mr-2">
+                                            <div class="bg-primary-500 h-2 rounded-full" style="width: 10%"></div>
+                                        </div>
+                                        <span class="font-medium">10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Toplam Öğrenci Sayısı -->
+                        <div class="bg-white rounded-lg border border-gray-200 p-5 shadow-sm hover:shadow-md transition-all">
+                            <h4 class="font-semibold text-gray-800 mb-4">Toplam Öğrenci Sayısı</h4>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600 font-medium">Aktif Öğrenci</span>
+                                <div class="bg-primary-50 px-4 py-2 rounded-lg border border-primary-200">
+                                    <span class="text-3xl font-bold text-primary-600">187</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 mt-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div class="flex flex-col items-center md:items-start">
+                    <img src="logo.png" alt="Empati Fizyoterapi Logo" class="h-24 mb-4">
+                    <p class="text-gray-400 text-center md:text-left">Sağlığınız bizim önceliğimiz</p>
+                </div>
+                
+                <!-- İletişim Bilgileri -->
+                <div>
+                    <h3 class="text-xl font-bold text-primary-400 mb-4 border-b border-gray-800 pb-2">Bizi Arayın</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-center transition-all hover:text-primary-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-primary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            <span>0344 231 19 00</span>
+                        </li>
+                        <li class="flex items-center transition-all hover:text-primary-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-primary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            <span>0537 822 92 11</span>
+                        </li>
+                        <li class="flex items-center transition-all hover:text-primary-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-primary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            <span>0530 302 84 09</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Adres -->
+                <div>
+                    <h3 class="text-xl font-bold text-primary-400 mb-4 border-b border-gray-800 pb-2">Adres</h3>
+                    <p class="text-gray-400 flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-primary-400 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span>Bahçelievler Mah. 2022 Sok. No:10, DULKADİROĞLU/ K.MARAŞ</span>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800 text-center">
+                <p class="text-sm text-gray-500">© 2023 Empati Fizyoterapi. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
